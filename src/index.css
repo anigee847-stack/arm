@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* University Application System Design System */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 212 13% 16%;
+
+    /* University brand colors */
+    --university-primary: 214 89% 31%; /* Deep blue */
+    --university-primary-light: 214 89% 85%;
+    --university-secondary: 213 27% 84%; /* Light blue-gray */
+    --university-accent: 47 96% 53%; /* Gold accent */
+    --university-accent-light: 47 96% 95%;
+
+    /* System colors */
+    --card: 0 0% 100%;
+    --card-foreground: 212 13% 16%;
+    
+    --primary: 214 89% 31%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 213 27% 84%;
+    --secondary-foreground: 212 13% 16%;
+    
+    --muted: 213 27% 94%;
+    --muted-foreground: 212 13% 45%;
+    
+    --accent: 47 96% 53%;
+    --accent-foreground: 212 13% 16%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 213 27% 84%;
+    --input: 213 27% 84%;
+    --ring: 214 89% 31%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 48 96% 53%;
+    --warning-foreground: 212 13% 16%;
+    
+    --info: 214 89% 60%;
+    --info-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 89% 31%), hsl(214 89% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(213 27% 84%), hsl(213 27% 90%));
+    --gradient-accent: linear-gradient(135deg, hsl(47 96% 53%), hsl(47 96% 65%));
+    
+    /* Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(214 89% 31% / 0.1), 0 1px 2px 0 hsl(214 89% 31% / 0.06);
+    --shadow-medium: 0 4px 6px -1px hsl(214 89% 31% / 0.1), 0 2px 4px -1px hsl(214 89% 31% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(214 89% 31% / 0.1), 0 4px 6px -2px hsl(214 89% 31% / 0.05);
+    
+    /* Spacing and layout */
+    --radius: 0.5rem;
+    --radius-large: 1rem;
+    
+    /* Transitions */
+    --transition-fast: all 0.15s ease-out;
+    --transition-normal: all 0.3s ease-out;
+    --transition-slow: all 0.5s ease-out;
+
+    /* Sidebar */
+    --sidebar-background: 214 89% 31%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 214 89% 31%;
+    --sidebar-accent: 214 89% 40%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 214 89% 40%;
+    --sidebar-ring: 47 96% 53%;
+  }
+
+  .dark {
+    --background: 212 13% 9%;
+    --foreground: 213 27% 84%;
+    
+    --card: 212 13% 12%;
+    --card-foreground: 213 27% 84%;
+    
+    --primary: 214 89% 60%;
+    --primary-foreground: 212 13% 9%;
+    
+    --secondary: 212 13% 16%;
+    --secondary-foreground: 213 27% 84%;
+    
+    --muted: 212 13% 16%;
+    --muted-foreground: 213 27% 65%;
+    
+    --accent: 47 96% 65%;
+    --accent-foreground: 212 13% 9%;
+    
+    --border: 212 13% 16%;
+    --input: 212 13% 16%;
+    --ring: 214 89% 60%;
+
+    --sidebar-background: 212 13% 6%;
+    --sidebar-foreground: 213 27% 84%;
+    --sidebar-primary: 214 89% 60%;
+    --sidebar-primary-foreground: 212 13% 9%;
+    --sidebar-accent: 212 13% 12%;
+    --sidebar-accent-foreground: 213 27% 84%;
+    --sidebar-border: 212 13% 16%;
+    --sidebar-ring: 47 96% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
